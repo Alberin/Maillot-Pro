@@ -2,17 +2,3 @@ backend:
   name: github
   repo: Alberin/maillot-pro
   branch: main
-
-media_folder: "images"
-public_folder: "/images"
-
-collections:
-  - name: "produits"
-    label: "Produits"
-    folder: "produits"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Nom", name: "title", widget: "string" }
-      - { label: "Prix (€)", name: "price", widget: "number" }
-      - { label: "Image", name: "image", widget: "image" }
